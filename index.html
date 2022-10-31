@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Collaboration Task 1 - Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+      <div id="header">
+        <h1 id="title">Social Media Survey Form</h1>
+        <p id="description">Please fill out accordingly</p>
+      </div>
+
+      <!-- form element -->
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" class="input-field" type="text" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="name-label">Email</label>
+          <input id="email" class="input-field" type="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="name-label">Age</label>
+          <input id="number" class="input-field" type="number" min="10" max="120" required>
+        </div>
+
+        <div class="form-group">
+          <p id="dropdown-label">What is your favorite social media platform?</p>
+          <select name="social-media" id="social-media" class="input-field">
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Snapchat">Snapchat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p id="radio-label">How often do you log onto your social media accounts?</p>
+          <input type="radio" class="input-radio" name="answer" value="Few times a week"> Few times a week </br>
+          <input type="radio" class="input-radio" name="answer" value="Few times a day"> Few times a day </br>
+          <input type="radio" class="input-radio" name="answer" value="Once a day" checked> Once a day </br>
+          <input type="radio" class="input-radio" name="answer" value="Never"> Never </br>
+        </div>
+
+        <div class="form-group">
+          <p id="checkbox-label">Which devices do you mostly use when accessing social media platforms? <i>(select all that apply)</i></p>
+
+          <label for="smartphone"> 
+            <input type="checkbox" id="smartphone" class="input-checkbox" name="smartphone" value="smartphone">
+            Smartphone 
+          </label>
+          
+          <label for="laptop"> 
+            <input type="checkbox" id="laptop" class="input-checkbox" name="laptop" value="laptop">
+            Laptop 
+          </label>
+          
+          <label for="tablet"> 
+            <input type="checkbox" id="tablet" class="input-checkbox" name="tablet" value="tablet">
+            Tablet/iPad 
+          </label>
+          <label for="desktop"> <input type="checkbox" id="desktop" class="input-checkbox" name="desktop" value="desktop">
+            Desktop 
+          </label>
+        </div>
+
+        <div class="form-group">
+        <p id="textarea-label">If you have any more comments, please write them down below:</p>
+        <textarea id="more-comments" name="comments">
+        </textarea>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
